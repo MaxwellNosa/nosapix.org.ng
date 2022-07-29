@@ -1,0 +1,67 @@
+<!DOCTYPE html5>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <script src="JQUERY 3.5.1.js"></script>
+    <script src="primo.js"></script>
+    <script src="nosaR.js"></script>
+    <link rel="stylesheet" href="nosaSC.css">
+</head>
+
+<body>
+    
+    <head>
+        <img src="nosapix.png" class="logoName"></img>
+    </head>
+    
+    <div>
+        <center>
+            <img src="welcoming.png" class="welcoming"></img></br>
+            <img src="npic.png" class="picG"></img></br>
+        </center>
+    </div>
+    
+    <div class="gray">
+        <center>
+            <div style="text-align: left; width:350px">
+            
+                <p class="den"> RESIZE YOUR IMAGE </p>
+                <center>
+                    <button  id="times" class="selector" onclick="times()"> ENLARGE IMAGE </button>
+                    <button  id="divide"class="selector" onclick="divide()"> REDUCE IMAGE </button></br>
+                </center>
+                </br>
+                
+                <div id="id01" class="modal">
+                    <p class="pills"> width and height cannot be greater than 5000px </p>
+                </div>
+                
+                <div id="id02" class="modal">
+                    <p class="pills"> width and height cannot be less than 150px </p>
+                </div>
+                </br>
+                
+                <div>
+                    <center>
+                        <img src="" id="preview" class="preView"></img></br>
+                    </center>
+                </div>
+                
+                <div id="work" style="display:none">
+                    <input id="imageFile" name="imageFile" type="file" class="imageFile" accept="image/*" hidden/> 
+                    <label for="imageFile">Select Image</label></br></br>
+                    <button id="ii" class="buttons" onclick="num2()"> 2× </button>
+                    <button id="iv" class="buttons" onclick="num4()"> 4× </button> 
+                    <button id="vi" class="buttons" onclick="num6()"> 6× </button>
+                    <button id="viii" class="buttons" onclick="num8()"> 8× </button></br>
+                    <button id="jpeg" class="buttons" onclick="jpeg()"> JPEG </button>
+                    <button id="png" class="buttons" onclick="png()"> PNG  </button> </br></br>
+                    <button class="buttons" onclick="download()"> DOWNLOAD  </button></br>
+                </div>
+                
+            </div>
+        </center>
+    </div>
+    
+</body>
+</html>
